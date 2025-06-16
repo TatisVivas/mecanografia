@@ -1,0 +1,18 @@
+Fila_central_III
+20 3 16
+Asa
+Sas
+A-a
+_a-
+Ono
+Non
+Ete
+Tet
+Uhu
+Huh
+Idi
+Did
+AsOnEtUhId
+SaNoTeHuDi
+IdUhEtOnAs
+DiHuTeNoSa

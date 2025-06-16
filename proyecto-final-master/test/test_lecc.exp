@@ -1,0 +1,36 @@
+#!/usr/bin/expect
+
+set timeout -1
+spawn ./test_lecc
+
+# test_menuLeccion
+expect "Selecciona lección: "
+send -- "1\r";
+expect "Selecciona lección: "
+send -- "0\r";
+
+# test_imprimirLeccion
+expect "Pulsa enter para continuar..."
+send -- "\r";
+
+# test_practLeccion
+expect "Pulsa enter para continuar..."
+for {set x 0} {$x<388} {incr x} {
+	send -- "h";
+	sleep .1;
+
+	if {[expr $x % 78] < 40} {
+		send -- " ";
+	} else {
+		send -- "x";
+	}
+
+	incr x;
+	sleep .001;
+}
+send -- "h";
+
+# expect "Pulse cualquier tecla para continuar..."
+# send -- "\r";
+
+expect eof

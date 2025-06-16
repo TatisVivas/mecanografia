@@ -1,0 +1,12 @@
+Fila_central_I
+3 1 10
+f
+j
+fj
+jf
+asdf
+jkl
+lkj
+fdsa
+hg
+gh
